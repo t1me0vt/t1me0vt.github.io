@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="网络，渗透">
+  <meta name="keywords" content="Metasploit,">
 
 
 
@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="安全、渗透">
+<meta name="description" content="Metasploit基本模块端口扫描模块auxiliary/scanner/portscanscanner/portscan/ack        ACK防火墙扫描scanner/portscan/ftpbounce  FTP跳端口扫描scanner/portscan/syn        SYN端口扫描scanner/portscan/tcp        TCP端口扫描scanner/port">
+<meta name="keywords" content="Metasploit">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/11/07/hello-world/index.html">
+<meta property="og:title" content="MSF部分基本模块">
+<meta property="og:url" content="http://yoursite.com/2018/11/09/MSF部分基本模块/index.html">
 <meta property="og:site_name" content="t1me0vt`s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Metasploit基本模块端口扫描模块auxiliary/scanner/portscanscanner/portscan/ack        ACK防火墙扫描scanner/portscan/ftpbounce  FTP跳端口扫描scanner/portscan/syn        SYN端口扫描scanner/portscan/tcp        TCP端口扫描scanner/port">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-07T06:44:58.809Z">
+<meta property="og:updated_time" content="2018-11-09T08:30:14.596Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="MSF部分基本模块">
+<meta name="twitter:description" content="Metasploit基本模块端口扫描模块auxiliary/scanner/portscanscanner/portscan/ack        ACK防火墙扫描scanner/portscan/ftpbounce  FTP跳端口扫描scanner/portscan/syn        SYN端口扫描scanner/portscan/tcp        TCP端口扫描scanner/port">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/07/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/09/MSF部分基本模块/">
 
 
 
 
 
-  <title>Hello World | t1me0vt`s Blog</title>
+  <title>MSF部分基本模块 | t1me0vt`s Blog</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/07/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/09/MSF部分基本模块/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="t1me0vt">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">MSF部分基本模块</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-07T14:44:58+08:00">
-                2018-11-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-09T16:18:24+08:00">
+                2018-11-09
               </time>
             
 
@@ -329,15 +329,61 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="Metasploit基本模块"><a href="#Metasploit基本模块" class="headerlink" title="Metasploit基本模块"></a>Metasploit基本模块</h1><h2 id="端口扫描模块"><a href="#端口扫描模块" class="headerlink" title="端口扫描模块"></a>端口扫描模块</h2><p>auxiliary/scanner/portscan<br>scanner/portscan/ack        ACK防火墙扫描<br>scanner/portscan/ftpbounce  FTP跳端口扫描<br>scanner/portscan/syn        SYN端口扫描<br>scanner/portscan/tcp        TCP端口扫描<br>scanner/portscan/xmas       TCP”XMas”端口扫描</p>
+<h2 id="SMB模块"><a href="#SMB模块" class="headerlink" title="SMB模块"></a>SMB模块</h2><p>smb枚举auxiliary/scanner/smb/smb_enumusers<br>返回DCERPC信息auxiliary/scanner/smb/pipe_dcerpc_auditor<br>扫描SMB2协议auxiliary/scanner/smb/smb2<br>扫描smb共享文件auxiliary/scanner/smb/smb_enumshares<br>枚举系统上的用户auxiliary/scanner/smb/smb_enumusers<br>SMB登录auxiliary/scanner/smb/smb_login<br>SMB登录use windows/smb/psexec(通过md5值登录)<br>扫描组的用户auxiliary/scanner/smb/smb_lookupsid<br>扫描系统版本auxiliary/scanner/smb/smb_version</p>
+<h2 id="mssql扫描-端口tcp1433udp1434"><a href="#mssql扫描-端口tcp1433udp1434" class="headerlink" title="mssql扫描(端口tcp1433udp1434)"></a>mssql扫描(端口tcp1433udp1434)</h2><p>admin/mssql/mssql_enum     MSSQL枚举<br>admin/mssql/mssql_exec     MSSQL执行命令<br>admin/mssql/mssql_sql      MSSQL查询<br>scanner/mssql/mssql_login  MSSQL登陆工具<br>scanner/mssql/mssql_ping   测试MSSQL的存在和信息</p>
+<p>另外还有一个mssql_payload的模块 利用使用的</p>
+<h2 id="smtp扫描"><a href="#smtp扫描" class="headerlink" title="smtp扫描"></a>smtp扫描</h2><p>smtp枚举auxiliary/scanner/smtp/smtp_enum<br>扫描smtp版本auxiliary/scanner/smtp/smtp_version</p>
+<h2 id="snmp扫描"><a href="#snmp扫描" class="headerlink" title="snmp扫描"></a>snmp扫描</h2><p>通过snmp扫描设备auxiliary/scanner/snmp/community</p>
+<h2 id="ssh扫描"><a href="#ssh扫描" class="headerlink" title="ssh扫描"></a>ssh扫描</h2><p>ssh登录auxiliary/scanner/ssh/ssh_login<br>ssh公共密钥认证登录auxiliary/scanner/ssh/ssh_login_pubkey<br>扫描ssh版本测试auxiliary/scanner/ssh/ssh_version</p>
+<h2 id="telnet扫描"><a href="#telnet扫描" class="headerlink" title="telnet扫描"></a>telnet扫描</h2><p>telnet登录auxiliary/scanner/telnet/telnet_login<br>扫描telnet版本auxiliary/scanner/telnet/telnet_version</p>
+<h2 id="tftp扫描"><a href="#tftp扫描" class="headerlink" title="tftp扫描"></a>tftp扫描</h2><p>扫描tftp的文件auxiliary/scanner/tftp/tftpbrute</p>
+<p>ftp版本扫描scanner/ftp/anonymous</p>
+<h2 id="ARP扫描"><a href="#ARP扫描" class="headerlink" title="ARP扫描"></a>ARP扫描</h2><p>auxiliary/scanner/discovery/arp_sweep</p>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>扫描UDP服务的主机auxiliary/scanner/discovery/udp_probe<br>检测常用的UDP服务auxiliary/scanner/discovery/udp_sweep<br>sniffer密码auxiliary/sniffer/psnuffle<br>snmp扫描scanner/snmp/community<br>vnc扫描无认证扫描scanner/vnc/vnc_none_auth</p>
+<h2 id="举个小栗子"><a href="#举个小栗子" class="headerlink" title="举个小栗子"></a>举个小栗子</h2><h3 id="Metasploit口令猜解模块"><a href="#Metasploit口令猜解模块" class="headerlink" title="Metasploit口令猜解模块"></a>Metasploit口令猜解模块</h3><h4 id="SSH服务口令猜解："><a href="#SSH服务口令猜解：" class="headerlink" title="SSH服务口令猜解："></a>SSH服务口令猜解：</h4><p>msf &gt; use auxiliary/scanner/ssh/ssh_login（使用ssh_login模块）</p>
+<p>msf auxiliary(ssh_login) &gt; show options （查看选项）</p>
+<p>msf auxiliary(ssh_login) &gt; set RHOSTS 10.107.0.99（目标）</p>
+<p>msf auxiliary(ssh_login) &gt; set USER_FILE /root/username.txt（用户名字典，或指定用户）</p>
+<p>msf auxiliary(ssh_login) &gt; set PASS_FILE /root/pass.txt（密码字典文件）</p>
+<p>msf auxiliary(ssh_login) &gt; set THREADS 50（线程）</p>
+<p>msf auxiliary(ssh_login) &gt; exploit （开始）</p>
+<h4 id="Telnet口令猜解："><a href="#Telnet口令猜解：" class="headerlink" title="Telnet口令猜解："></a>Telnet口令猜解：</h4><p>msf &gt; use auxiliary/scanner/telnet/telnet_login （使用telnet_login模块）</p>
+<p>msf auxiliary(telnet_login) &gt; show options （查看选项）</p>
+<p>msf auxiliary(telnet_login) &gt; set RHOSTS 10.180.100.141（目标）</p>
+<p>msf auxiliary(telnet_login) &gt; set USER_FILE /root/username.txt（用户名字典，或指定用户）</p>
+<p>msf auxiliary(telnet_login) &gt; set PASS_FILE /root/pass.txt（密码字典文件）</p>
+<p>msf auxiliary(telnet_login) &gt; exploit （开始）</p>
+<h4 id="Samba口令猜解："><a href="#Samba口令猜解：" class="headerlink" title="Samba口令猜解："></a>Samba口令猜解：</h4><p>msf &gt; use auxiliary/scanner/smb/smb_login （使用smb_login模块）</p>
+<p>msf auxiliary(smb_login) &gt; show options （查看选项）</p>
+<p>msf auxiliary(smb_login) &gt; set RHOSTS 10.180.100.10（目标）</p>
+<p>msf auxiliary(ssmb_login) &gt; set USER_FILE /root/username.txt（用户名字典，或指定用户）</p>
+<p>msf auxiliary(ssmb_login) &gt; set PASS_FILE /root/pass.txt（密码字典文件）</p>
+<p>msf auxiliary(ssmb_login) &gt; exploit（开始）</p>
+<h4 id="Mysql口令猜解："><a href="#Mysql口令猜解：" class="headerlink" title="Mysql口令猜解："></a>Mysql口令猜解：</h4><p>msf &gt; use auxiliary/scanner/mysql/mysql_login （使用mysql_login模块）</p>
+<p>msf auxiliary(mysql_login) &gt; show options （查看选项）</p>
+<p>msf auxiliary(mysql_login) &gt; set RHOSTS 192.168.230.176（目标）</p>
+<p>msf auxiliary(mysql_login) &gt; set USERNAME root（用户名字典，或指定用户）</p>
+<p>msf auxiliary(mysql_login) &gt; set PASS_FILE /root/pass.txt（密码字典文件）</p>
+<p>msf auxiliary(mysql_login) &gt; exploit（开始）</p>
+<h4 id="Postgresq口令猜解："><a href="#Postgresq口令猜解：" class="headerlink" title="Postgresq口令猜解："></a>Postgresq口令猜解：</h4><p>msf &gt; use auxiliary/scanner/postgres/postgres_login （使用postgres_login模块）</p>
+<p>msf auxiliary(postgres_login) &gt; show options （查看选项）</p>
+<p>msf auxiliary(postgres_login) &gt; set RHOSTS 192.168.230.10（目标）</p>
+<p>msf auxiliary(postgres_login) &gt; set USER_FILE /root/username.txt（用户名字典，或指定用户）</p>
+<p>msf auxiliary(postgres_login) &gt; set PASS_FILE /root/pass.txt（密码字典文件）</p>
+<p>msf auxiliary(postgres_login) &gt; exploit （开始）</p>
+<h4 id="Mssql口令猜解："><a href="#Mssql口令猜解：" class="headerlink" title="Mssql口令猜解："></a>Mssql口令猜解：</h4><p>msf &gt; use auxiliary/scanner/mssql/mssql_login （使用mssql_login 模块）</p>
+<p>msf auxiliary(mssql_login) &gt; show options （查看选项）</p>
+<p>msf auxiliary(mssql_login) &gt; set RHOSTS 10.107.0.64（目标）</p>
+<p>msf auxiliary(mssql_login) &gt; set USER_FILE /root/username.txt（用户名字典，或指定用户）</p>
+<p>msf auxiliary(mssql_login) &gt; set PASS_FILE /root/pass.txt（密码字典文件）</p>
+<p>msf auxiliary(mssql_login) &gt; exploit（开始）</p>
+<h4 id="Tomcat口令猜解："><a href="#Tomcat口令猜解：" class="headerlink" title="Tomcat口令猜解："></a>Tomcat口令猜解：</h4><p>msf &gt; use auxiliary/scanner/http/tomcat_mgr_login （使用tomcat_mgr_login模块）</p>
+<p>msf auxiliary(tomcat_mgr_login) &gt; show options（查看选项）</p>
+<p>msf auxiliary(tomcat_mgr_login) &gt; set RHOSTS 192.168.230.176（目标）</p>
+<p>msf auxiliary(tomcat_mgr_login) &gt; set USER_FILE username.txt（用户名字典，或指定用户）</p>
+<p>msf auxiliary(tomcat_mgr_login) &gt; set PASS_FILE /root/pass.txt（密码字典文件）</p>
+<p>msf auxiliary(tomcat_mgr_login) &gt; exploit（开始）</p>
 
       
     </div>
@@ -353,6 +399,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Metasploit/" rel="tag"># Metasploit</a>
+          
+        </div>
+      
 
       
       
@@ -362,15 +414,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/11/07/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/09/MSF部分基本模块/" rel="prev" title="MSF部分基本模块">
-                MSF部分基本模块 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
